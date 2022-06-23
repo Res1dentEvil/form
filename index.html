@@ -12,24 +12,24 @@
 
 <body>
     <header>
-        <div class="header">
-            <div class="logo">CONTACT</div>
+        <div class="container header">
+            <div class="header__logo">CONTACT</div>
         </div>
     </header>
 
     <main>
-        <section class="section">
+        <section class="container section">
             <div class="section__map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23485.1658274548!2d30.541701887389028!3d50.44279946129622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1655999297469!5m2!1sru!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="1280" height="750" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer">
+        <div class="container footer">
             <div class="student-name">Ivan Davydenko</div>
             <div class="year">2022</div>
         </div>
@@ -38,20 +38,37 @@
     <div id="popup" class="popup">
         <div class="popup__body">
             <div class="popup__content">
-                <button class="popup__close">X</button>
+                <button class="popup__close"><img src="./img/cross.svg" alt=""></button>
 
                 <div class="popup__form">
-                    <div class="popup__title"></div>
-                    <div class="popup__subtitle"></div>
+                    <div class="popup__title">GET IN TOUCH</div>
+                    <div class="popup__subtitle">We are always happy to make valuable new contacts</div>
                     <form action="">
-                        <input type="text">
-                        <input type="text">
-                        <input type="email">
-                        <input type="button" value="Send">
+                        <div class="user-data">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" class="name">
+
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" class="email">
+                        </div>
+                        <label for="email">Message:</label>
+                        <input id="message" type="text" class="message">
+                        <div class="popup__counter">Letters used: <span>10/50</span> </div>
+                        <input type="submit" value="Send" class="popup_send">
                     </form>
                 </div>
 
-                <div class="popup__info"></div>
+                <div class="popup__info">
+                        <h2>CONTACT INFORMATION</h2>
+                        <a href=""><img class="popup__info-img" src="./img/inf.png" alt=""></a>
+                        <h3>Click to view</h3>
+                        <div class="popup__social">
+                            <a href=""><img class="inst" src="./img/instagram.png" alt=""></a>
+                            <a href=""><img class="facebook" src="./img/linkedin.png" alt=""></a>
+                            <a href=""><img class="twitter" src="./img/twitter.png" alt=""></a>
+                            
+                        </div>
+                </div>
 
             </div>
         </div>

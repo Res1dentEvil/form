@@ -51,14 +51,14 @@
 
                         <div class="user-data">
                             <label for="name">Name:</label>
-                            <input id="name" type="text" class="name">
+                            <input autocomplete="off" id="name" type="text" class="name">
 
                             <label for="email">Email:</label>
-                            <input id="email" type="email" class="email">
+                            <input autocomplete="off" id="email" type="email" class="email">
                         </div>
                         <label for="email">Message:</label>
-                        <input id="message" type="text" class="message">
-                        <div class="popup__counter">Letters used: <span>10/50</span> </div>
+                        <input autocomplete="off" id="message" type="text" maxlength="30" class="message">
+                        <div class="popup__counter">Letters used: <span class="count">0</span>/30 </div>
                         <input type="submit" value="Send" class="popup_send">
                     </form>
                 </div>

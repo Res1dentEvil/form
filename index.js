@@ -5,7 +5,6 @@ const count = document.querySelector('.count');
 const message = document.querySelector('.message');
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         popup.classList.add('open-popup');
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 btnClose.addEventListener('click', () => {
     popup.classList.remove('open-popup');
 });
-
 
 
 message.addEventListener('input', () => {

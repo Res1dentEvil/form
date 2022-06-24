@@ -66,7 +66,7 @@ body {
     background: rgba(41, 41, 41, 0.6);
     top: 0;
     left: 0;
-    opacity   : 0;
+    opacity: 0;
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
@@ -218,9 +218,103 @@ h3 {
 
 .open-popup {
     transition: all 0.5s ease 0s;
-    opacity    : 1;
-    visibility : visible;
+    opacity: 1;
+    visibility: visible;
 }
-.invalid-message{
+
+.invalid-message {
     color: red;
+}
+
+@media screen and (max-width: 1280px) {
+    .popup__title {
+        font-size: 25px;
+    }
+
+    .popup__info h2,
+    h3 {
+        font-size: 16px;
+    }
+    .popup__social {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        width: 150%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .popup__content {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .popup__close {
+        right: 25px;
+    }
+
+    .popup__title {
+        font-size: 20px;
+    }
+
+    .popup__form {
+        padding: 6% 7%;
+    }
+
+    .popup__form form {
+        gap: 0px;
+    }
+
+    input {
+        margin-bottom: 20px;
+    }
+
+    .user-data {
+        flex-direction: column;
+    }
+
+    .name,
+    .email {
+        width: 100%;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    .popup__counter {
+        margin-bottom: 50px;
+    }
+
+
+    .popup__info {
+        padding: 6% 7%;
+    }
+
+    .popup__info h2,
+    h3 {
+        font-size: 13px;
+    }
+
+    .popup__info h3 {
+        font-size: 16px;
+    }
+
+    .popup__info img {
+        width: 60px;
+    }
+
+    .popup__social {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        width: 150%;
+    }
+
+    .popup__social img {
+        width: 50%;
+    }
 }

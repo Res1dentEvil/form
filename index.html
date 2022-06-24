@@ -43,7 +43,12 @@
                 <div class="popup__form">
                     <div class="popup__title">GET IN TOUCH</div>
                     <div class="popup__subtitle">We are always happy to make valuable new contacts</div>
-                    <form action="">
+                    <form onsubmit="console.log(`
+                            name: ${this.name.value},
+                            email: ${this.email.value},
+                            message: ${this.message.value}`);
+                            return false">
+
                         <div class="user-data">
                             <label for="name">Name:</label>
                             <input id="name" type="text" class="name">
@@ -59,17 +64,16 @@
                 </div>
 
                 <div class="popup__info">
-                        <h2>CONTACT INFORMATION</h2>
-                        <a href=""><img class="popup__info-img" src="./img/inf.png" alt=""></a>
-                        <h3>Click to view</h3>
-                        <div class="popup__social">
-                            <a href=""><img class="inst" src="./img/instagram.png" alt=""></a>
-                            <a href=""><img class="facebook" src="./img/linkedin.png" alt=""></a>
-                            <a href=""><img class="twitter" src="./img/twitter.png" alt=""></a>
-                            
-                        </div>
-                </div>
+                    <h2>CONTACT INFORMATION</h2>
+                    <a href=""><img class="popup__info-img" src="./img/inf.png" alt=""></a>
+                    <h3>Click to view</h3>
+                    <div class="popup__social">
+                        <a href=""><img class="inst" src="./img/instagram.png" alt=""></a>
+                        <a href=""><img class="facebook" src="./img/linkedin.png" alt=""></a>
+                        <a href=""><img class="twitter" src="./img/twitter.png" alt=""></a>
 
+                    </div>
+                </div>
             </div>
         </div>
     </div>

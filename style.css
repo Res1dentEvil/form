@@ -41,6 +41,7 @@ body {
     font-weight: bold;
     letter-spacing: 0.1em;
     margin-left: 5%;
+    color: rgba(245, 245, 245, 0.479);
 }
 
 .section {
@@ -54,6 +55,7 @@ body {
 
 .student-name {
     margin-bottom: 10px;
+    color: rgba(245, 245, 245, 0.479);
 }
 
 
@@ -64,8 +66,8 @@ body {
     background: rgba(41, 41, 41, 0.6);
     top: 0;
     left: 0;
-    /* opacity   : 0; */
-    /* visibility: hidden; */
+    opacity   : 0;
+    visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -210,4 +212,10 @@ h3 {
 
 .popup_send:hover {
     cursor: pointer;
+}
+
+.open-popup {
+    transition: all 0.5s ease 0s;
+    opacity    : 1;
+    visibility : visible;
 }
